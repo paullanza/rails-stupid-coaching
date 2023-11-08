@@ -1,0 +1,17 @@
+<div id="user-question">
+  <%= @answer %>
+  <p>- You</p>
+</div>
+<div id="coach-answer">
+  <%  if @answer == "I am going to work" %>
+    <%= "Great!" %>
+  <% elsif @answer[-1] == "?" %>
+    <%= "Silly question, get dressed and go to work!" %>
+  <% else %>
+    <%= "I don't care, get dressed and go to work!" %>
+  <% end %>
+  <p>- Coach Thickskull</p>
+</div>
+<div>
+  <a href="/ask">Ask another question</a>
+</div>
